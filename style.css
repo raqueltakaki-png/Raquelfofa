@@ -1,0 +1,217 @@
+/* ==========================
+ESTILO GERAL
+========================== */
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color: #fff8e1;
+color: #333;
+}
+
+/* ==========================
+NAVBAR
+========================== */
+
+.navbar{
+background-color: #d62300 !important;
+}
+
+.navbar-brand{
+font-size: 28px;
+font-weight: bold;
+color: white !important;
+}
+
+.nav-link{
+color: white !important;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.nav-link:hover{
+color: #ffc72c !important;
+}
+
+/* ==========================
+BANNER
+========================== */
+
+#inicio{
+background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+url("../imagens/banner.jpg");
+background-size: cover;
+background-position: center;
+height: 550px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#inicio h1{
+font-size: 60px;
+font-weight: bold;
+}
+
+#inicio p{
+font-size: 24px;
+margin-bottom: 30px;
+}
+
+.btn-danger{
+background-color: #d62300;
+border: none;
+border-radius: 30px;
+padding: 12px 30px;
+transition: 0.3s;
+}
+
+.btn-danger:hover{
+background-color: #ffc72c;
+color: black;
+}
+
+/* ==========================
+TÍTULOS
+========================== */
+
+h2{
+color: #d62300;
+font-weight: bold;
+margin-bottom: 30px;
+}
+
+/* ==========================
+SOBRE
+========================== */
+
+#sobre{
+padding: 70px 0;
+text-align: center;
+}
+
+/* ==========================
+CARDS
+========================== */
+
+.card{
+border: none;
+border-radius: 15px;
+overflow: hidden;
+box-shadow: 0 5px 15px rgba(0,0,0,.2);
+transition: .4s;
+}
+
+.card:hover{
+transform: translateY(-10px);
+}
+
+.card img{
+height: 230px;
+object-fit: cover;
+}
+
+.card-body{
+text-align: center;
+}
+
+.card h5{
+color: #d62300;
+font-weight: bold;
+}
+
+/* ==========================
+GALERIA
+========================== */
+
+#galeria img{
+border-radius: 15px;
+box-shadow: 0 5px 15px rgba(0,0,0,.2);
+transition: .4s;
+}
+
+#galeria img:hover{
+transform: scale(1.05);
+}
+
+/* ==========================
+FORMULÁRIO
+========================== */
+
+form{
+max-width: 700px;
+margin: auto;
+}
+
+.form-control{
+border-radius: 10px;
+margin-bottom: 15px;
+}
+
+.form-control:focus{
+border-color: #ffc72c;
+box-shadow: 0 0 10px #ffc72c;
+}
+
+/* ==========================
+RODAPÉ
+========================== */
+
+footer{
+background-color: #d62300;
+color: white;
+padding: 25px;
+margin-top: 50px;
+}
+
+footer p{
+margin: 5px;
+}
+
+/* ==========================
+ANIMAÇÃO
+========================== */
+
+.card,
+img,
+.btn-danger{
+animation: aparecer 1s;
+}
+
+@keyframes aparecer{
+
+from{
+opacity: 0;
+transform: translateY(30px);
+}
+
+to{
+opacity: 1;
+transform: translateY(0);
+}
+
+}
+
+/* ==========================
+RESPONSIVO
+========================== */
+
+@media(max-width:768px){
+
+#inicio{
+height: 400px;
+}
+
+#inicio h1{
+font-size: 38px;
+}
+
+#inicio p{
+font-size: 18px;
+}
+
+.navbar-brand{
+font-size: 22px;
+}
+
+}
